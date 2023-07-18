@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Quem está assistindo?</title>
+  <style>
+    body {
+      background-color: #000;
+      color: #fff;
+      text-align: center;
+      font-family: Arial, sans-serif;
+    }
+    
+    .container {
+      padding: 40px;
+    }
+    
+    h1 {
+      font-size: 36px; /* Tamanho maior para o título */
+      margin-bottom: 20px;
+    }
+    
+    .profile-list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-top: 20px;
+    }
+    
+    .profile {
+      margin: 20px; /* Espaçamento maior entre os perfis */
+    }
+    
+    .profile img {
+      width: 160px; /* Tamanho maior para as imagens de perfil */
+      height: 160px;
+      border-radius: 50%;
+      cursor: pointer;
+      transition: border-color 0.3s;
+    }
+    
+    .profile img:hover {
+      border-color: #ff0000;
+    }
+    
+    .netflix-logo {
+      margin-top: 20px;
+      width: 300px; /* Ajuste o tamanho conforme necessário */
+    }
+    
+    .btn-add-profile {
+      cursor: pointer;
+    }
+    
+    .btn-manage-profile {
+      cursor: pointer;
+      font-size: 24px;
+      padding: 10px 20px;
+      background-color: #e50914;
+      border: none;
+      border-radius: 5px;
+      color: #fff;
+      transition: background-color 0.3s;
+    }
+    
+    .btn-manage-profile:hover {
+      background-color: #b30c10;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <img class="netflix-logo" src="image/Netflix_Logo_PMS.png" alt="Netflix Logo">
+    <h1>Quem está assistindo?</h1>
+    <div class="profile-list">
+      <div class="profile">
+        <img src="image/e.jpg" alt="Perfil 1" onclick="selecionarPerfil(1)">
+        <p style="font-size: 24px;">Perfil 1</p>
+      </div>
+      <div class="profile">
+        <img src="image/ij2.jpg" alt="Perfil 2" onclick="selecionarPerfil(2)">
+        <p style="font-size: 24px;">Perfil 2</p>
+      </div>
+      <div class="profile">
+        <img src="image/ij3.jpg" alt="Perfil 3" onclick="selecionarPerfil(3)">
+        <p style="font-size: 24px;">Perfil 3</p>
+      </div>
+      <!-- Adicione quantos perfis você precisar -->
+      <div class="profile btn-add-profile" onclick="adicionarPerfil()">
+        <img src="image/botao.png" alt="Adicionar Perfil" style="width: 160px; height: 160px;">
+        <p style="font-size: 24px;">Adicionar Perfil</p>
+      </div>
+    </div>
+    <button class="btn-manage-profile" onclick="gerenciarPerfil()">Gerenciar Perfil</button>
+  </div>
+  
+  <script>
+    function selecionarPerfil(perfil) {
+      // Aqui você pode adicionar o código para redirecionar para a página principal ou executar outras ações, dependendo do perfil selecionado.
+      console.log('Perfil selecionado:', perfil);
+    }
+    
+    function adicionarPerfil() {
+      // Adicione o código para adicionar um novo perfil aqui.
+      console.log('Adicionar novo perfil');
+    }
+    
+    function gerenciarPerfil() {
+      // Adicione o código para gerenciar os perfis aqui.
+      console.log('Gerenciar perfis');
+    }
+  </script>
+</body>
+</html>
